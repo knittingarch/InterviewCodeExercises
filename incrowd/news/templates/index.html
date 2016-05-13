@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Take Home Assignment for InCrowd</title>
+</head>
+
+<body>
+
+<ul class="arts">
+	{% for article in articles %}
+	<li>{{ forloop.counter }}</li>
+	<li>Title: {{ article.title }}</li>
+	<li>Published: {{ article.published }}</li>
+{% endfor %}
+</ul>
+
+</body>
+
+</html>
