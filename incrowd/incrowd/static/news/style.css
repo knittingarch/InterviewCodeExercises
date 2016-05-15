@@ -1,0 +1,66 @@
+/*-------------------------------------*/
+/* BASIC SETUP */
+/*-------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'JosefinSans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*  GENERAL TYPOGRAPHY  */
+
+h1 {
+    display: block;
+    margin: 0 -3%;
+    margin-bottom: 25px;
+    padding: 1%;
+    background-color: #0086b3;
+    text-align: center;
+    color: #eee;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    }
+
+p {
+    line-height: 135%;
+    padding: 10px 25px;
+}
+
+
+/*  Overflow DIVS */
+
+#container { margin: 0 3%; }
+
+.hidden { visibility: hidden; }
+
+#finish { padding-bottom: 50px; }
+
+#finish, #loading, #loading2, #loading3, #loading4 {
+    color: #0086b3;
+    letter-spacing: 2px;
+    }
+
+/*  LISTS  */
+
+ul {
+    line-height: 145%;
+    font-size: 90%;
+    }
+
+li { list-style-type: none; }
+
+li.last, li.last-two, li.last-three, li.last-four, li.last-five { padding-bottom: 30px; }
+
+.highlight { font-weight: 600; }

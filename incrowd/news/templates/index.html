@@ -1,19 +1,84 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html>
 <head>
 	<title>Take Home Assignment for InCrowd</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'news/style.css' %}" />
 </head>
 
 <body>
 
-<ul class="arts">
-	{% for article in articles %}
-	<li>{{ forloop.counter }}</li>
-	<li>Title: {{ article.title }}</li>
-	<li>Published: {{ article.published }}</li>
-{% endfor %}
-</ul>
+	<h1>Current Articles About Stellar Biotechnologies</h1>
 
+	<div id="container">
+		<div id="articles1">
+		<h2>First Group of Articles</h2>
+			<ul>
+				{% for article in articles %}
+				<li>{{ forloop.counter }}</li>
+				<li><span class="highlight">Title:</span> {{ article.title }}</li>
+				<li class="last"><span class="highlight">Published:</span> {{ article.published }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+
+		<div id="loading"></div>
+
+		<div id="articles2" class="hidden">
+		<h2>Second Group of Articles</h2>
+		<ul>
+			{% for article in articles2 %}
+			<li>{{ forloop.counter }}</li>
+			<li><span class="highlight">Title:</span> {{ article.title }}</li>
+			<li class="last-two"><span class="highlight">Published:</span> {{ article.published }}</li>
+			{% endfor %}
+		</ul>
+		</div>
+
+		<div id="loading2"></div>
+
+		<div id="articles3" class="hidden">
+			<h2>Third Group of Articles</h2>
+		<ul>
+			{% for article in articles3 %}
+			<li>{{ forloop.counter }}</li>
+			<li><span class="highlight">Title:</span> {{ article.title }}</li>
+			<li class="last-three"><span class="highlight">Published:</span> {{ article.published }}</li>
+			{% endfor %}
+		</ul>
+		</div>
+
+		<div id="loading3"></div>
+
+		<div id="articles4" class="hidden">
+			<h2>Fourth Group of Articles</h2>
+			<ul>
+			{% for article in articles4 %}
+			<li>{{ forloop.counter }}</li>
+			<li><span class="highlight">Title:</span> {{ article.title }}</li>
+			<li class="last-four"><span class="highlight">Published:</span> {{ article.published }}</li>
+			{% endfor %}
+		</ul>
+		</div>
+
+		<div id="loading4"></div>
+
+		<div id="articles5" class="hidden">
+		<h2>Fifth Group of Articles</h2>
+			<ul>
+				{% for article in articles5 %}
+				<li>{{ forloop.counter }}</li>
+				<li><span class="highlight">Title:</span> {{ article.title }}</li>
+				<li class="last-five"><span class="highlight">Published:</span> {{ article.published }}</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<div id="finish"></div>
+	</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="{% static 'news/scroll.js' %}"></script>
 </body>
 
 </html>
