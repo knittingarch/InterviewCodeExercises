@@ -19,7 +19,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^$', views.index, name='home'),
-    url(r'^admin/', include(admin.site.urls)),
+        url(r'^admin/', include(admin.site.urls)),
 ]
 
 
