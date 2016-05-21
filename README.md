@@ -1,4 +1,4 @@
-This is a code exercise for InCrowd.  
+This is a code exercise for a tech company in the Greater Boston area.  
 
 Make an API request to http://www.stellarbiotechnologies.com/media/press-releases/json?limit=10&offset=10.
 Display the title and publish dates of the news articles.
